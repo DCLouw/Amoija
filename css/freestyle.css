@@ -1,0 +1,311 @@
+html,
+body {
+    height: 100%;
+    width: 100%;
+    position: relative;
+    z-index: 0;
+
+    background-image: url(../img/background.jpg);
+    background-size: cover;
+    
+    overflow: hidden;
+    
+}
+
+h1{
+    font-family: Verdana;
+    color: white;
+    font-weight: 600;
+    font-size: 50px;
+}
+
+
+a{
+    cursor: pointer;
+    text-decoration: none !important;
+    color: #D5684C;
+}
+
+a:hover{
+    color: white !important;
+}
+
+section{
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+.vertigo{
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+/*HEADER*/
+
+#header{
+    position: absolute;
+    width: 100px;
+    margin: 10px;   
+    cursor: pointer;
+}
+
+
+/*LANDING PAGE*/
+
+#section-Land{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+#section-Land img{
+    position: relative;
+    width: 500px;
+    flex: 3;
+    
+   
+}
+
+#wrap-enter{
+    flex: 1;
+    width: 200px;
+    height: 100px;
+    position: relative;
+    
+}
+
+#wrap-enter h3{
+    color: #D5684C;
+    font-size: 15px;
+    font-family: Andale Mono;
+    cursor: pointer;
+}
+
+#wrap-enter h3:hover{
+    font-size: 18px;
+}
+
+#section-Content{
+    position: relative;
+    padding-bottom: 60px;
+    padding-top: 50px;
+    
+}
+
+#section-Content > .row{
+    height: 100%;
+}
+
+#wrapContentL{
+    position: relative;
+    height: 100%;
+}
+
+#wrapIcons{
+width: 100%;
+}
+
+.eventIcon{
+    width: 100%;
+}
+
+.eventIcon img{
+    width: 120px;
+    margin: 20px auto;
+}
+
+#wrapContentR{
+    position: relative;
+    height: 100%;
+}
+
+#divEvents .infoBox{
+    width: 90%;
+    height: 90%;
+    max-width: 500px;
+}
+
+.infoBox{
+    
+    background-color: rgba(0,0,0,0.5);
+    
+    padding: 2%;
+    border-style: solid;
+    border-color: black;
+    border-width: 1px;
+
+}
+
+.infoBox h3{
+    color: white;
+    font-size: 15px;
+    font-family: Open Sans;
+    margin-left: 10px;
+}
+
+.infoBox p{
+     color: white;
+    color: lightgray;
+}
+
+#navBar{
+    
+    background-color: rgba(0,0,0,0.3);
+    
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+    height: 60px;
+    
+    border-bottom-style: solid;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    
+    border-top-style: solid;
+    border-top-color: white;
+    border-top-width: 1px;
+    
+    position: absolute;
+
+}
+
+.navDrop{
+
+  top: auto;
+  bottom: 0px;
+    
+  transform: translateY(0%);
+    
+  border: none !important;
+  background-color: transparent !important;
+    
+  flex-direction: row !important;
+    
+
+    
+}
+
+.navItem{
+/*    margin: 50px 0px;*/
+}
+
+.navItem a{
+    font: 20px Open Sans;
+    color: #D5684C;
+}
+
+.selected{
+    color: white !important;
+}
+
+#itmback a{
+    color: gray!important;
+}
+
+#itmback a span{
+    font-size: 17px;
+    margin: 5px;
+}
+
+
+/*Folding of flexbox navBar*/
+
+@media(max-width:700px){
+    
+    #navBar{
+        flex-direction: column;
+        height: auto;
+
+    }
+    
+    .navItem{
+    margin: 30px 0px;
+    }
+    
+}
+
+/*Calendar Page*/
+
+.contentCanvas{
+    position: relative;
+    height: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#wrapCalendar{
+    width: 90%;
+    max-height: 90%;
+    
+    overflow-y: scroll;
+}
+
+#tblCalendar{
+    width: 100%;
+    background-color: rgba(0,0,0,0.5);
+    color: white;
+}
+
+
+.tdEnter{
+    color: #D5684C;
+}
+
+#divAbout .infoBox{
+    height: 90%;
+    width: 90%;
+    
+    max-width: 900px;
+    max-height: 600px;
+    
+}
+
+#colAbout{
+    height: 100%;
+}
+
+#divAbout img{
+    width: 90%;
+}
+
+.contactDetails{
+    color: lightgray;
+    font-size: 20px;
+}
+
+.contactDetails span{
+    margin-right: 10px;
+}
+
+/*CUSTOM SCROLLBARS*/
+
+.canScroll{
+    overflow-y: scroll;
+}
+
+.canScroll::-webkit-scrollbar {
+    width: 10px;
+}
+ 
+.canScroll::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.canScroll::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+ 
+}
+
+.hide{
+    display: none !important;
+}
