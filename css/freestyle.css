@@ -5,11 +5,42 @@ body {
     position: relative;
     z-index: 0;
 
+    overflow: hidden;
+    
+}
+
+#wallpaper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    top: 0%;
+    
     background-image: url(../img/background.jpg);
     background-size: cover;
     
-    overflow: hidden;
-    
+    transition: width 3s ease-out, height 3s ease-out, left 0.5s ease-out, top 3s ease-out;
+}
+
+.zoom{
+    width: 105% !important;
+    height: 105% !important;
+}
+
+.posOne{
+    left: 0% !important;
+}
+
+.posTwo{
+    left: -1% !important;
+}
+
+.posThree{
+    left: -2% !important;
+}
+
+.posFour{
+    left: -3% !important;
 }
 
 h1{
@@ -27,7 +58,7 @@ a{
 }
 
 a:hover{
-    color: white !important;
+    color: grey !important;
 }
 
 section{
@@ -45,12 +76,35 @@ section{
 /*HEADER*/
 
 #header{
+    display: none;
     position: absolute;
-    width: 100px;
-    margin: 10px;   
+    width: 150px;
+    margin: 20px;   
     cursor: pointer;
+    z-index: 10000;
 }
 
+.shrink{
+    width: 80px !important;
+    margin: 20px !important; 
+}
+
+/*HOME PAGE*/
+
+#imgWatermark{
+    display: none;
+    position: absolute;
+    height: 100%;
+    left: -20%;
+    filter: opacity(0.1);
+    
+    transition: all 0.5s ease-out;
+    z-index: 1;
+}
+
+.dark{
+    filter: opacity(0.9) !important;
+}
 
 /*LANDING PAGE*/
 
@@ -174,6 +228,7 @@ width: 100%;
     border-top-width: 1px;
     
     position: absolute;
+    z-index: 100;
 
 }
 
@@ -199,7 +254,8 @@ width: 100%;
 
 .navItem a{
     font: 20px Open Sans;
-    color: #D5684C;
+    color: white;
+    font-weight: 400;
 }
 
 .selected{
@@ -241,6 +297,8 @@ width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    
+    z-index: 1;
 }
 
 #wrapCalendar{
@@ -253,9 +311,16 @@ width: 100%;
 #tblCalendar{
     width: 100%;
     background-color: rgba(0,0,0,0.5);
-    color: white;
+    color: lightgray;
 }
 
+#tblCalendar tr td{
+    border-color: black;
+}
+
+#tblCalendar tr:hover{
+    background-color: rgba(0,0,0,0.5);
+}
 
 .tdEnter{
     color: #D5684C;
@@ -309,3 +374,5 @@ width: 100%;
 .hide{
     display: none !important;
 }
+
+

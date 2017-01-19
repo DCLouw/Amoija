@@ -1,8 +1,11 @@
 $(document).ready(function(){
     
+    
+    
     $("#btnEnterSite").click(function(){
        
         paintUI("HOME");
+        $("#header").show();
         
     });
     
@@ -52,6 +55,9 @@ function paintUI(ui){
             $("#divEvents").removeClass("hide");
             $("#itmEVENTS a").addClass("selected");
             
+            $("#wallpaper").addClass("posOne");
+            $("#header").addClass("shrink");
+            
             break;
             
         case "HOME" :
@@ -59,6 +65,11 @@ function paintUI(ui){
               buildNav(["EVENTS", "CALENDAR", "GALLERY", "ABOUT"]);
               $("#navBar").removeClass("navDrop");
               $("#navBar").addClass("vertigo");
+            
+              $("#imgWatermark").show();
+              $("#imgWatermark").addClass("dark");
+            
+              $("#wallpaper").addClass("zoom");
             
             break;
             
@@ -71,11 +82,15 @@ function paintUI(ui){
 
               $("#divCalendar").removeClass("hide");
               $("#itmCALENDAR a").addClass("selected");
+            
+              $("#wallpaper").addClass("posTwo");
                 
             
             break;
             
         case "itmGALLERY" :
+            
+            $("#wallpaper").addClass("posThree");
             
             break;
             
@@ -89,14 +104,18 @@ function paintUI(ui){
             $("#divAbout").removeClass("hide");
             $("#itmABOUT a").addClass("selected");
             
+            $("#wallpaper").addClass("posFour");
+            
             break;
     }
        
     
 }
 
+//Clearing UI before painting new contents
+
 function clearUI(){
-    alert("abt");
+  
     $("#itmEVENTS a").removeClass("selected");
     $("#itmABOUT a").removeClass("selected");
     $("#itmCALENDAR a").removeClass("selected");
@@ -108,6 +127,12 @@ function clearUI(){
     $("#divCalendar").addClass("hide");
     $("#section-Land").addClass("hide");
     $("#navBar").addClass("hide");
+    
+    $("#imgWatermark").removeClass("dark");
+    
+    //Ensure only zoom is left before deciding where to go
+    $("#wallpaper").attr("class","zoom");
+    
 }
 
 
