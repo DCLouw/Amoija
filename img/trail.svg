@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 174 59" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:1.41421;">
+    <g transform="matrix(1,0,0,1,-17.6617,-423.096)">
+        <g transform="matrix(1,0,0,1,-3670.85,17.8441)">
+            <g>
+                <g>
+                    <g transform="matrix(1.10383,0,0,1.10383,-115.728,-74.1478)">
+                        <g transform="matrix(1.46071,0,0,1.46071,-5016.84,-144.307)">
+                            <text x="5793.18px" y="421.912px" style="font-family:'OpenSans-Bold', 'Open Sans', sans-serif;font-weight:700;font-size:36px;fill:white;">TR</text>
+                        </g>
+                        <g transform="matrix(1.46071,0,0,1.46071,-4909.97,-144.449)">
+                            <text x="5793.18px" y="421.912px" style="font-family:'OpenSans-Bold', 'Open Sans', sans-serif;font-weight:700;font-size:36px;fill:white;">IL</text>
+                        </g>
+                        <g transform="matrix(0.352034,0,0,0.352034,3331.64,319.318)">
+                            <g>
+                                <g>
+                                    <g transform="matrix(1,0,0,1,288.307,16.8745)">
+                                        <path d="M284.074,311.461L336.469,416.251L231.679,416.251L284.074,311.461Z" style="fill:white;"/>
+                                    </g>
+                                    <g transform="matrix(0.452332,0,0,0.452332,439.617,229.359)">
+                                        <path d="M284.074,311.461L336.469,416.251L231.679,416.251L284.074,311.461Z" style="fill:rgb(52,52,52);"/>
+                                    </g>
+                                    <g transform="matrix(0.316739,0,0,0.316739,493.775,285.8)">
+                                        <path d="M284.074,311.461L336.469,416.251L231.679,416.251L284.074,311.461Z" style="fill:rgb(97,97,97);"/>
+                                    </g>
+                                </g>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="matrix(0.0908009,0,0,0.0908009,3645.53,422.565)">
+                        <g transform="matrix(9.36766,0,0,9.36766,-1329.29,-5356.74)">
+                            <text x="211.561px" y="617.924px" style="font-family:'Arial-BoldMT', 'Arial', sans-serif;font-weight:700;font-size:12px;fill:white;">AMOĲA</text>
+                        </g>
+                        <g>
+                            <g transform="matrix(1,0,0,1,288.307,16.8745)">
+                                <path d="M284.074,311.461L336.469,416.251L231.679,416.251L284.074,311.461Z" style="fill:rgb(213,104,77);"/>
+                            </g>
+                            <g transform="matrix(0.452332,0,0,0.452332,439.617,229.359)">
+                                <path d="M284.074,311.461L336.469,416.251L231.679,416.251L284.074,311.461Z" style="fill:rgb(115,115,115);"/>
+                            </g>
+                            <g transform="matrix(0.316739,0,0,0.316739,493.775,285.8)">
+                                <path d="M284.074,311.461L336.469,416.251L231.679,416.251L284.074,311.461Z" style="fill:rgb(99,99,99);"/>
+                            </g>
+                        </g>
+                    </g>
+                    <g transform="matrix(1,0,0,1,-171.107,64.0742)">
+                        <rect x="3920.33" y="391.196" width="112.468" height="8.023" style="fill:rgb(213,104,76);"/>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

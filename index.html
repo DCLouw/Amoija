@@ -26,21 +26,35 @@
 
 <body>
     
-    <div id="header">
-        <img src="img/logo.svg">
+<!--Absolute elements that must be above the content section-->
+    
+   <div id="screenShade"> <!--Fullscreen image viewer-->
+         
+        <div id="imgFullWrap">
+         <span id="btnClose">X</span>
+         <img id="imgFull" src="img/background.jpg">
+        </div>
+
+        
+   </div>
+    
+    <!--Small home icon top left-->
+    <div id="header"> 
+        <a><img src="img/logo.svg"></a>
     </div>
     
-        <div id="navBar" class="vertigo hide"> 
-<!--            <div class="navItem text-center" id="itmBack"><a><span class="glyphicon glyphicon-chevron-left"></span>back</a></div>-->
+    <!--The navbar-->
+    <div id="navBar" class="vertigo hide"> <!--The navbar-->
+        <!--<div class="navItem text-center" id="itmBack"><a><span class="glyphicon glyphicon-chevron-left"></span>back</a></div>-->
     </div>
     
+    <!--AMOIJA watermark-->
     <img id="imgWatermark" src="img/watermark.svg" class="dark">
     
+    <!--Swimmers background-->
     <div id="wallpaper" class=""></div>
 
-<!--Navigation row-->
-    
-    
+    <!--Landing page-->
     <section id="section-Land">
         
         <img src="img/logo.svg" class="">
@@ -52,35 +66,32 @@
     </section>
     
     
-
+<!--Actual content areas-->
    
-    <section id="section-Content" class="hide">
+    <section id="section-Content" class="hide"> <!--wraps individual content divs-->
         
         <div id="divEvents" class="contentCanvas row hide">
             
-            <div class="col-xs-4 col-xs-offset-1" id="wrapContentL">
+            <div class="col-xs-4 col-xs-offset-1" id="wrapContentL"> 
                 
                 
                 
                 <div class="row vertigo" id="wrapIcons">
                     
-                    <h1 class="text-center">EVENTS</h1>
-                    <br>
-                    
                     <div class="col-xs-6">
-                        <div class="col-xs-1 eventIcon"><img class="center-block" src="img/TRIX.svg"></div>
+                        <img class="eventIcon center-block" src="img/TRIX.svg">
                     </div>
                     
                     <div class="col-xs-6">
-                        <div class="col-xs-1 eventIcon"><img class="center-block" src="img/TRIX.svg"></div>
+                        <img class="eventIcon center-block" src="img/TRIX.svg">
                     </div>
                     
                     <div class="col-xs-6">
-                        <div class="col-xs-1 eventIcon"><img class="center-block" src="img/TRIX.svg"></div>
+                        <img class="eventIcon center-block" src="img/TRIX.svg">
                     </div>
                     
                     <div class="col-xs-6">
-                        <div class="col-xs-1 eventIcon"><img class="center-block" src="img/TRIX.svg"></div>
+                        <img class="eventIcon center-block" src="img/TRIX.svg">
                     </div>
                     
                 </div>
@@ -89,7 +100,7 @@
             
             <div class="col-xs-6 col-xs-offset-1" id="wrapContentR">
                 
-                <div class="infoBox vertigo canScroll">
+                <div id="eventInfo" class="infoBox vertigo canScroll">
                     <h3>ABSTRACT:</h3>
                     <hr>
                     <p>Amoija is looking to host two Tri-X Challenge events in 2016. 
@@ -121,13 +132,35 @@
         </div>
         
         <div id="divCalendar" class="contentCanvas hide">
-            
-            <div id="wrapCalendar" class="canScroll">
                 
                 <h1 class="text-center">CALENDAR</h1>
                 <br>
+                
+                <div id="calendarWrap" class="canScroll">
+                    
                 <table id="tblCalendar" class="table ">
                     <tbody>
+                      <tr>
+                        <td>21 JAN 2017</td>
+                        <td>TRAIL-X Stellenbosch</td>
+                        <td>Cross Triathlon</td>
+                        <td>Western Cape</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                      <tr>
+                        <td>21 JAN 2017</td>
+                        <td>TRAIL-X Stellenbosch</td>
+                        <td>Cross Triathlon</td>
+                        <td>Western Cape</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                      <tr>
+                        <td>21 JAN 2017</td>
+                        <td>TRAIL-X Stellenbosch</td>
+                        <td>Cross Triathlon</td>
+                        <td>Western Cape</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
                       <tr>
                         <td>21 JAN 2017</td>
                         <td>TRAIL-X Stellenbosch</td>
@@ -177,22 +210,59 @@
             
         </div>
         
+        <div id="divGallery" class="contentCanvas hide">
+            
+            <div id="galWrap" class="canScroll">
+            
+                <div class="thumbContainer">
+                    <img src="img/photos/1.jpg">
+                </div>
+                <div class="thumbContainer">
+                    <img src="img/photos/2.jpg">
+                </div>
+                <div class="thumbContainer">
+                    <img src="img/photos/3.jpg">
+                </div>
+                <div class="thumbContainer">
+                    <img src="img/photos/4.jpg">
+                </div>
+                <div class="thumbContainer">
+                    <img src="img/photos/5.jpg">
+                </div>
+                <div class="thumbContainer">
+                    <img src="img/photos/6.jpg">
+                </div>
+                <div class="thumbContainer">
+                    <img src="img/photos/7.jpg">
+                </div>
+                <div class="thumbContainer">
+                    <img src="img/photos/8.jpg">
+                </div>
+                
+            </div>
+        
+        </div>
+        
         <div id="divAbout" class="contentCanvas hide">
             
             <div class="row infoBox"> 
                 
-                <div class="col-xs-6">
-                    <img src="img/logo.svg">
+                <div id="colSocial" class="col-xs-6">
+                <div>
+                    
+                    <img src="img/logo.svg">    
                     <br><br>
-                    <a class="contactDetails" ><span class="glyphicon glyphicon-chevron-left"></span>info@amoija.com</a>
-                    <br><br>
-                    <a class="contactDetails" ><span class="glyphicon glyphicon-envelope"></span>info@amoija.com</a>
-                    <br><br>
-                    <a class="contactDetails" ><span class="glyphicon glyphicon-facetime-video"></span>info@amoija.com</a>
-                    <br><br>
-                    <a class="contactDetails" ><span class="glyphicon glyphicon-map-marker"></span>info@amoija.com</a>
-                    <br><br>
-                    <a class="contactDetails" ><span class="glyphicon glyphicon-bullhorn"></span>info@amoija.com</a>
+                        <div class="text-center">
+                        <a class="contactDetails" ><span class="glyphicon glyphicon-facetime-video"></span>
+                        </a>
+
+                        <a class="contactDetails" ><span class="glyphicon glyphicon-map-marker"></span></a>
+
+                        <a class="contactDetails" ><span class="glyphicon glyphicon-bullhorn"></span></a>
+                        </div>
+                        
+                    </div>
+                    
                     
                 </div>
                 
