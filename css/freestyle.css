@@ -92,14 +92,19 @@ section{
 /*HOME PAGE*/
 
 #imgWatermark{
-    display: none;
+    
     position: absolute;
     height: 100%;
-    left: -20%;
-    filter: opacity(0.1);
+    left: -50%;
+    filter: opacity(0);
     
     transition: all 0.5s ease-out;
     z-index: 1;
+}
+
+.moving{
+    left: 0% !important;
+    transition: all 20s ease-out !important;
 }
 
 .dark{
@@ -114,6 +119,7 @@ section{
     flex-direction: column;
     align-items: center;
     justify-content: space-around;
+    z-index: 1000;
     
 }
 
@@ -146,44 +152,40 @@ section{
 
 #section-Content{
     position: relative;
-    padding-bottom: 100px;
-    padding-top: 50px;
+    padding-bottom: 70px;
+    padding-top: 70px;
     transition: all ease-out 0.5s;
+    background-color: rgba(0,0,0,0.5) !important;
     
 }
 
-.tint{
-    background-color: rgba(0,0,0,0.7);
-}
+
 
 #section-Content > .row{
     height: 100%;
 }
 
-#wrapContentL{
-    position: relative;
-    height: 100%;
-}
 
 #wrapIcons{
 width: 100%;
 }
 
-.eventIconWrap{
+#eventIconWrap{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
 
-.eventIcon{
-    height: 50px;
+#eventIcon{
+    width: 80%;
     margin: 20px;
     cursor: pointer;
     color: red;
    
 }
 
+/*
 .eventIcon:hover{
     transform:scale(1.1);
 }
@@ -191,6 +193,7 @@ width: 100%;
 .icoSelected{
     transform:scale(1.3) !important;
 }
+*/
 
 
 #wrapContentR{ 
@@ -229,7 +232,7 @@ width: 100%;
 
 #navBar{
     
-    background-color: rgba(0,0,0,0.3);
+/*    background-color: rgba(0,0,0,0.3);*/
     
     width: 100%;
     display: flex;
@@ -237,20 +240,25 @@ width: 100%;
     justify-content: space-around;
     align-items: center;
     
-    height: 100px;
+    height: 80px;
     
-    border-bottom-style: solid;
-    border-bottom-color: white;
+/*    border-bottom-style: solid;*/
+/*    border-bottom-color: #D5684C;*/
     border-bottom-width: 1px;
     
-    border-top-style: solid;
-    border-top-color: white;
+/*    border-top-style: solid;*/
+/*    border-top-color: #D5684C;*/
     border-top-width: 1px;
     
     position: absolute;
     z-index: 100;
-
 }
+
+#navBar span:last-child {
+   display: none;  
+} 
+  
+
 
 .navDrop{
 
@@ -264,7 +272,13 @@ width: 100%;
     
   flex-direction: row !important;
     
+}
 
+/*When the navbar has only the back item, just position it left insted of centering*/
+.onlyBack{
+    
+    justify-content:flex-start !important;
+    padding-left: 100px;
     
 }
 
@@ -272,26 +286,25 @@ width: 100%;
 /*    margin: 50px 0px;*/
 }
 
-.navItem a{
+.navItem{
     font: 20px Open Sans;
-    color: #D5684C;
+    color: ;
     font-weight: 400;
 }
 
+#navBar .navItem[data-item='EVENTS']{
+    
+}
+
+#navBar span{
+    color: #DE5A39;
+    font-size: 20px;
+}
+
 .selected{
-    color: white !important;
+    color:  white !important;
 }
 
-/*
-#itmback a{
-    color: gray!important;
-}
-*/
-
-#itmback a span{
-    font-size: 17px;
-    margin: 5px;
-}
 
 
 /*Folding of flexbox navBar*/
@@ -322,19 +335,29 @@ width: 100%;
     flex-wrap: wrap;
     
     z-index: 1;
+    
+    transition: all 0.5s ease-out;
+    background-color: transparent;
 }
 
 
 
 #tblCalendar{
     width: 100%;
-    background-color: rgba(0,0,0,0.5);
+/*    background-color: rgba(0,0,0,0.5);*/
     color: lightgray;
     margin: 0 0;
+    border-collapse: separate;
+    border-spacing: 0px 10px !important;
+    
 }
 
 #tblCalendar tr td{
-    border-color: black;
+    border-bottom-color: white;
+    border-top-style: none;
+    color: white;
+    margin-bottom: 100px;
+    background-color: rgba(0,0,0,0.3);
 }
 
 #tblCalendar tr:hover{
@@ -357,7 +380,7 @@ width: 100%;
     max-width: 900px;
     max-height: 600px;
     
-    background-color: rgba(0,0,0,0.5);
+/*    background-color: rgba(0,0,0,0.5);*/
     
 }
 
@@ -500,7 +523,7 @@ width: 100%;
     position: absolute;
     width: 100%;
     height: 100%;
-    background-color: rgba(0,0,0,0);
+    background-color: rgba(0,0,0,0.9);
     z-index: 100000;
     display: none;
     transition: all 1s linear;
@@ -523,11 +546,13 @@ width: 100%;
 #calendarWrap {
     width: 90%;
     max-width: 1000px;
-    max-height: 70%;
+    max-height: 80%;
 }
 
-/*
-#divEvents {
-    background-color: rgba(0,0,0,0.5);
+.tint{
+    background-color: rgba(0,0,0,0.7) !important;
 }
-*/
+
+#divCalendar {
+   align-content: flex-start;
+}

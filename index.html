@@ -17,7 +17,7 @@
     <!-- Stylesheet -->
     <link href="css/freestyle.css" rel="stylesheet">
     
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     
     <link href="https://fonts.googleapis.com/css?family=Pacifico" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Allura" rel="stylesheet">
@@ -49,7 +49,7 @@
     </div>
     
     <!--AMOIJA watermark-->
-    <img id="imgWatermark" src="img/watermark.svg" class="dark">
+    <img id="imgWatermark" src="img/watermark.svg" class="">
     
     <!--Swimmers background-->
     <div id="wallpaper" class=""></div>
@@ -72,30 +72,10 @@
         
         <div id="divEvents" class="contentCanvas row hide">
             
-            <div class="col-xs-4 col-xs-offset-1" id="wrapContentL"> 
-                
-                
-                
-                <div class="row vertigo" id="wrapIcons">
-                    
-                    <div class="col-xs-6">
-                        <img class="eventIcon center-block" src="img/TRIX.svg">
-                    </div>
-                    
-                    <div class="col-xs-6">
-                        <img class="eventIcon center-block" src="img/TRIX.svg">
-                    </div>
-                    
-                    <div class="col-xs-6">
-                        <img class="eventIcon center-block" src="img/TRIX.svg">
-                    </div>
-                    
-                    <div class="col-xs-6">
-                        <img class="eventIcon center-block" src="img/TRIX.svg">
-                    </div>
-                    
-                </div>
+            <div class="col-xs-4 col-xs-offset-1" id="eventIconWrap"> 
             
+                        <img id="eventIcon" src="img/TRIX.svg">
+                
             </div>
             
             <div class="col-xs-6 col-xs-offset-1" id="wrapContentR">
@@ -133,74 +113,129 @@
         
         <div id="divCalendar" class="contentCanvas hide">
                 
-                <h1 class="text-center">CALENDAR</h1>
-                <br>
+            <h1 class="text-center">CALENDAR</h1>
                 
-                <div id="calendarWrap" class="canScroll">
+            <div id="calendarWrap" class="canScroll">
                     
                 <table id="tblCalendar" class="table ">
                     <tbody>
                       <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>14 MAY 2017</td>
+                        <td>Bartiney2Bartiney</td>
+                        <td>MTB</td>
+                        <td>Bartiney, Church Street</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                       <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>XX MAY 2017</td>
+                        <td>DUO Challenge #1</td>
+                        <td>X-Duathlon</td>
+                        <td>Banghoek</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                       <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>XX JUL 2017</td>
+                        <td>DUO Challenge #2</td>
+                        <td>X-DUATHLON</td>
+                        <td>Boschendal</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                       <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>3 JUN 2017</td>
+                        <td>Olyfberg Summer Challenge</td>
+                        <td>Trail RUn</td>
+                        <td>Robertson</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                       <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>15-17 SEP 2017 (TBC)</td>
+                        <td>E-Bike Stage Race</td>
+                        <td>E-MTB</td>
+                        <td>Boschendal</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                       <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>22-24 SEPT 2017</td>
+                        <td>Cochoqua Trail</td>
+                        <td>Trail Run</td>
+                        <td>Boschendal Wine Estate</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                      <tr>
+                        <td>07 OCT 2017 (TBC)</td>
+                        <td>Pinotage Run</td>
+                        <td>Fun Trail Run</td>
+                        <td>Stellenbosch</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                      <tr>
+                        <td>14 OCT 2017 (TBC)</td>
+                        <td>Java MTB</td>
+                        <td>MTB</td>
+                        <td>Bonnievale (TBA)</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                         <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>XX NOV 2017</td>
+                        <td>LUSAN Night Race #1</td>
+                        <td>Trail Run</td>
+                        <td>Stellenzicht</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                         <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>XX DEC 2017</td>
+                        <td>LUSAN Night Race #2</td>
+                        <td>Trail Run</td>
+                        <td>Neethlingshof</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                         <tr>
-                        <td>21 JAN 2017</td>
-                        <td>TRAIL-X Stellenbosch</td>
-                        <td>Cross Triathlon</td>
-                        <td>Western Cape</td>
+                        <td>01 JAN 2018</td>
+                        <td>TRI-X</td>
+                        <td>X-Triathlon</td>
+                        <td>Stellenbosch</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                        <tr>
+                        <td>TBA</td>
+                        <td>Boschedal Mile</td>
+                        <td>Swim</td>
+                        <td>Boschendal</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                        <tr>
+                        <td>TBA</td>
+                        <td>Anna Basson Trail Series #1</td>
+                        <td>Trail Run</td>
+                        <td>Mont Marie</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                        <tr>
+                        <td>TBA</td>
+                        <td>Stellenbosch Summit Challenge</td>
+                        <td>Trail Run</td>
+                        <td>SMC (TBA)</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                        <tr>
+                        <td>TBA</td>
+                        <td>Jonkershoek 21.1k</td>
+                        <td>Trail Run</td>
+                        <td>Jonkershoek</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                        <tr>
+                        <td>TBA</td>
+                        <td>McGreggor2Greton</td>
+                        <td>Trail Run</td>
+                        <td>TBA</td>
+                        <td class="tdEnter"><a>ENTER</a></td>
+                      </tr>
+                        <tr>
+                        <td>TBA</td>
+                        <td>Cederberg Stage</td>
+                        <td>MTB</td>
+                        <td>TBA</td>
                         <td class="tdEnter"><a>ENTER</a></td>
                       </tr>
                     </tbody>
@@ -249,9 +284,9 @@
                 
                 <div id="colSocial" class="col-xs-6">
                 <div>
-                    
-                    <img src="img/logo.svg">    
-                    <br><br>
+                     
+                    <img src="img/logo.svg">
+<!--
                         <div class="text-center">
                         <a class="contactDetails" ><span class="glyphicon glyphicon-facetime-video"></span>
                         </a>
@@ -260,6 +295,7 @@
 
                         <a class="contactDetails" ><span class="glyphicon glyphicon-bullhorn"></span></a>
                         </div>
+-->
                         
                     </div>
                     
